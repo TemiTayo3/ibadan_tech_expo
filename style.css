@@ -1,4 +1,4 @@
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     height: 100px;
@@ -7,14 +7,16 @@ nav{
     /* border: 2px solid black; */
     margin-bottom: 30px;
 }
-body{
+
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-nav img{
+
+nav img {
     height: 5vh;
 }
 
-.nav-items a{
+.nav-items a {
     text-decoration: none;
     font-size: 24px;
     color: rgba(34, 64, 147, 1);
@@ -27,7 +29,7 @@ nav img{
     gap: 30px;
 }
 
-.nav-items button{
+.nav-items button {
     background-color: #fdb915;
     color: rgba(34, 64, 147, 1);
     border: none;
@@ -35,78 +37,79 @@ nav img{
     width: 120px;
 }
 
-.maiden{
+.maiden {
     margin-top: 20px;
     width: 100%;
 }
 
-.edition-pix{
+.edition-pix {
     width: 100%;
     margin-top: 100px;
     margin-left: -20px;
 }
 
-.edition-con{
+.edition-con {
     display: flex;
     flex-direction: row;
     gap: 20px;
     width: 100%;
 }
 
-.edition{
+.edition {
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
 
-.edition img{
+.edition img {
     width: 50%;
 }
 
-.edition h1{
+.edition h1 {
     font-size: 24px;
     line-height: 36px;
     font-weight: 500;
     color: #224093;
 }
 
-.star{
+.star {
     border: 1.2px solid #00a877;
-    padding: 5px; 
+    padding: 5px;
     border-radius: 100%;
     animation: star infinite 5s delay iteration-count direction fill-mode;
-    
+
 }
 
 @keyframes star {
+
     /* 0%{
         translate: ;
     } */
-    25%{
+    25% {
         transition: rotate(90deg);
     }
 
-    50%{
+    50% {
         transition: rotate(180deg);
     }
 
-    75%{
+    75% {
         transition: rotate(270deg);
     }
 
-    100%{
+    100% {
         transition: rotate(260deg);
     }
 }
 
-.buy-tcket{
+.buy-tcket {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 60px;
 }
 
-.buy-tcket a{
+.buy-tcket a {
     text-decoration: none;
     padding: 5px;
     width: 100%;
@@ -119,16 +122,17 @@ nav img{
     font-weight: 500;
 }
 
-.buy{
+.buy {
     background-color: #fdb915;
 }
 
-.sponsor{
+.sponsor {
     border: 1px solid #224093;
 }
 
-.venue{
-    background-color: #fdb915;
+.venue {
+    background: rgb(202, 143, 1);
+    background: linear-gradient(90deg, rgba(202, 143, 1, 1) 0%, rgba(85, 118, 207, 1) 76%);
     width: 97%;
     display: flex;
     flex-direction: column;
@@ -138,13 +142,13 @@ nav img{
 }
 
 
-.venue h1{
+.venue h1 {
     color: white;
     font-size: 50px;
     font-weight: 700;
 }
 
-.venue p{
+.venue p {
     color: white;
     font-size: 30px;
     font-weight: 700;
@@ -158,50 +162,164 @@ nav img{
     /* gap: 30px; */
 }
 
-.about{
+.about {
     display: flex;
     gap: 0;
     /* width: 97%; */
     margin-top: 100px;
 }
 
-.words-pic{
-    border-bottom: 2px solid #fdb915 ;
+.words-pic {
+    border-bottom: 2px solid #fdb915;
 }
 
-.words{
+.words {
     width: 50%;
 }
 
-.words p{
+.words p {
     font-size: 18px;
     line-height: 20px;
     color: #224093;
     font-weight: 500;
 }
 
-.words img{
+.words img {
     width: 90%;
 }
 
-.girl img{
+.girl img {
     width: 100%;
     margin-right: 30px;
 }
 
-.veneupic h1{
+.veneupic h1 {
     font-size: 72px;
     line-height: 20px;
     color: #224093;
     font-weight: 800;
 }
 
-.veneupic hr{
+.veneupic hr {
     border: 2px solid #fdb915;
     margin-left: 20px;
 }
 
-.pic-of-venue{
+html, body{
+    overflow-x: hidden;
+}
+
+.pic-of-venue {
     width: 97%;
     margin-left: 30px;
+}
+
+@media screen and (max-width:475px) {
+    html, body{
+        overflow-x: hidden;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .edition-pix {
+        margin-left: -13px;
+    }
+
+    .edition-con {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .edition {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .edition h1 {
+        font-size: 20px;
+    }
+
+    .star {
+        height: 5vh;
+        border: none;
+        border: 1px solid #00a877;
+        width: 18%;
+        margin-left: 200px;
+    }
+
+    .buy-tcket {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+
+    .venue{
+        width: 93%;
+        /* margin-right: 20px; */
+    }
+
+    .venue h1 {
+        color: white;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    
+    .venue p {
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .venue-words{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        /* width: 97%; */
+        margin-top: 100px;
+    }
+
+    .words {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .words p{
+        margin-top: 20px;
+    }
+
+
+    .veneupic h1 {
+        font-size: 20px;
+        line-height: 20px;
+        margin-top: 50px;
+    }
+
+    .veneupic hr {
+        border: 2px solid #fdb915;
+        margin-left: 20px;
+        width: 90%;
+        margin-top: -40px;
+    }
+
+    .pic-of-venue {
+        width: 90%;
+        height: 30vh;
+        margin-left: 20px;
+        margin-top: -40px;
+    }
 }
